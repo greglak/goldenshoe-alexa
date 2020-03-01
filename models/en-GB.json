@@ -1,0 +1,689 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "golden shoe",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "GetUserNameIntent",
+                    "slots": [],
+                    "samples": [
+                        "What is my name",
+                        "Give me my name",
+                        "How do you call me"
+                    ]
+                },
+                {
+                    "name": "ListProducts",
+                    "slots": [],
+                    "samples": [
+                        "Get me the list of available products",
+                        "What can you do",
+                        "What do you sell"
+                    ]
+                },
+                {
+                    "name": "FilterByProductTypesOnSale",
+                    "slots": [
+                        {
+                            "name": "productKind",
+                            "type": "productKind"
+                        }
+                    ],
+                    "samples": [
+                        "Get the {productKind} on sale",
+                        "Get me the {productKind} on sale"
+                    ]
+                },
+                {
+                    "name": "FilterAllProductsOnSaleIntent",
+                    "slots": [],
+                    "samples": [
+                        "Get all products on sale"
+                    ]
+                },
+                {
+                    "name": "GetDetailsOnProduct",
+                    "slots": [
+                        {
+                            "name": "productName",
+                            "type": "AMAZON.Movie",
+                            "samples": [
+                                "{productName}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "Get me details on a product",
+                        "Get me details on {productName}",
+                        "What are the details of {productName}"
+                    ]
+                },
+                {
+                    "name": "ShowMyBasket",
+                    "slots": [],
+                    "samples": [
+                        "Show my basket",
+                        "I want to see my basket",
+                        "What is in my basket",
+                        "What do I have in my basket"
+                    ]
+                },
+                {
+                    "name": "Checkout",
+                    "slots": [],
+                    "samples": [
+                        "Check me out",
+                        "I would like to pay",
+                        "Place my order",
+                        "Checkout my basket"
+                    ]
+                },
+                {
+                    "name": "FAQ",
+                    "slots": [],
+                    "samples": [
+                        "Get me the FAQ section",
+                        "Take me to the Frequently Asked Questions",
+                        "Do you have a FAQ section"
+                    ]
+                },
+                {
+                    "name": "RaiseTicket",
+                    "slots": [
+                        {
+                            "name": "productType",
+                            "type": "AMAZON.Genre",
+                            "samples": [
+                                "{productType}",
+                                "It's a {productType}"
+                            ]
+                        },
+                        {
+                            "name": "timeOfOccurance",
+                            "type": "AMAZON.DATE",
+                            "samples": [
+                                "It happened {timeOfOccurance}",
+                                "{timeOfOccurance}"
+                            ]
+                        },
+                        {
+                            "name": "productName",
+                            "type": "AMAZON.Movie",
+                            "samples": [
+                                "{productName}",
+                                "It is called {productName}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "I have an issue",
+                        "I would like to complain"
+                    ]
+                },
+                {
+                    "name": "AddMovieToBasket",
+                    "slots": [
+                        {
+                            "name": "productName",
+                            "type": "AMAZON.Movie",
+                            "samples": [
+                                "{productName}"
+                            ]
+                        },
+                        {
+                            "name": "quantity",
+                            "type": "AMAZON.NUMBER",
+                            "samples": [
+                                "{quantity}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "add item to my basket",
+                        "add {productName} to my basket"
+                    ]
+                },
+                {
+                    "name": "GetMeListOfProducts",
+                    "slots": [
+                        {
+                            "name": "productKind",
+                            "type": "productKind"
+                        }
+                    ],
+                    "samples": [
+                        "Get me the {productKind} list",
+                        "Get the {productKind} list"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": []
+                },
+                {
+                    "name": "UpdateUsernameIntent",
+                    "slots": [
+                        {
+                            "name": "userName",
+                            "type": "AMAZON.SearchQuery",
+                            "samples": [
+                                "{userName}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "update my name",
+                        "change my name",
+                        "Change my name to {userName}",
+                        "Update my name to {userName}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": []
+                },
+                {
+                    "name": "RemoveItemFromBasketIntent",
+                    "slots": [
+                        {
+                            "name": "productName",
+                            "type": "AMAZON.Movie",
+                            "samples": [
+                                "Remove {productName}",
+                                "Delete {productName}",
+                                "{productName}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "Remove {productName} from my basket",
+                        "Delete {productName} from my basket",
+                        "Delete {productName} from basket",
+                        "Remove {productName} from basket",
+                        "Remove item from basket",
+                        "Remove item from my basket",
+                        "Delete item from my basket",
+                        "Delete item from basket"
+                    ]
+                },
+                {
+                    "name": "updateBasketItemIntent",
+                    "slots": [
+                        {
+                            "name": "productName",
+                            "type": "AMAZON.Movie",
+                            "samples": [
+                                "{productName}"
+                            ]
+                        },
+                        {
+                            "name": "quantity",
+                            "type": "AMAZON.NUMBER",
+                            "samples": [
+                                "{quantity}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "change quantity on my basket",
+                        "update {productName} on my basket",
+                        "update basket item"
+                    ]
+                },
+                {
+                    "name": "ComparisonIntent",
+                    "slots": [
+                        {
+                            "name": "productName",
+                            "type": "AMAZON.Movie",
+                            "samples": [
+                                "{productName}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "Get me recommendations to products like {productName}",
+                        "Get me recommendations"
+                    ]
+                },
+                {
+                    "name": "AddUserNameIntent",
+                    "slots": [
+                        {
+                            "name": "userName",
+                            "type": "AMAZON.SearchQuery",
+                            "samples": [
+                                "{userName}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "my name is {userName}",
+                        "my name is ",
+                        "call me",
+                        "call me {userName}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "productKind",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "men",
+                                "synonyms": [
+                                    "gentlemen"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "women",
+                                "synonyms": [
+                                    "ladies"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "kids",
+                                "synonyms": [
+                                    "child",
+                                    "children"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "RaiseTicket",
+                    "delegationStrategy": "ALWAYS",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "productType",
+                            "type": "AMAZON.Genre",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.739010405102.528407826880"
+                            }
+                        },
+                        {
+                            "name": "timeOfOccurance",
+                            "type": "AMAZON.DATE",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.739010405102.1317146357761"
+                            }
+                        },
+                        {
+                            "name": "productName",
+                            "type": "AMAZON.Movie",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.739010405102.1400401296786"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "AddMovieToBasket",
+                    "delegationStrategy": "ALWAYS",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "productName",
+                            "type": "AMAZON.Movie",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.512381841370.607581322224"
+                            }
+                        },
+                        {
+                            "name": "quantity",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.208607965155.1295169325040"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "UpdateUsernameIntent",
+                    "delegationStrategy": "ALWAYS",
+                    "confirmationRequired": true,
+                    "prompts": {
+                        "confirmation": "Confirm.Intent.1336999939804"
+                    },
+                    "slots": [
+                        {
+                            "name": "userName",
+                            "type": "AMAZON.SearchQuery",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.686178609511.208129085689"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "GetDetailsOnProduct",
+                    "delegationStrategy": "ALWAYS",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "productName",
+                            "type": "AMAZON.Movie",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1053291563037.250956693626"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "RemoveItemFromBasketIntent",
+                    "delegationStrategy": "ALWAYS",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "productName",
+                            "type": "AMAZON.Movie",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1360647554192.102085366963"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "updateBasketItemIntent",
+                    "delegationStrategy": "ALWAYS",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "productName",
+                            "type": "AMAZON.Movie",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1489414875467.1137724850287"
+                            }
+                        },
+                        {
+                            "name": "quantity",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1489414875467.1436662944337"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "ComparisonIntent",
+                    "delegationStrategy": "ALWAYS",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "productName",
+                            "type": "AMAZON.Movie",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.266177598293.318960847902"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "AddUserNameIntent",
+                    "delegationStrategy": "ALWAYS",
+                    "confirmationRequired": true,
+                    "prompts": {
+                        "confirmation": "Confirm.Intent.1529841921588"
+                    },
+                    "slots": [
+                        {
+                            "name": "userName",
+                            "type": "AMAZON.SearchQuery",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1529841921588.356823993802"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.739010405102.528407826880",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Which product type is it?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "What type of product is this?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.739010405102.1400401296786",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "What is the name of the product?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.739010405102.1317146357761",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "When did this happen?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1352219125174.642494348307",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Which one?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1220736803454.1266340202798",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "It seems like you have this in your basket already, would like to increment it?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Intent.1336999939804",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Do you really want to change your username?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.299595796591.1512870281924",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "What name would you like?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Intent.1501050046616",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Are you sure about this?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.686178609511.208129085689",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "What name would you like to update to?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Intent.142072040815",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Would you really like to add a username?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1053291563037.250956693626",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "What is the name of the product"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1365930162260.1398310638533",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "How many?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.512381841370.607581322224",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "What is the name of the product?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.208607965155.1295169325040",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "How many would you like?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1360647554192.102085366963",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Which one do you wish to delete?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1489414875467.1137724850287",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Which basket item is it?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1489414875467.1436662944337",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "What should be the new quantity?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.266177598293.318960847902",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "What is the name of the product you would like to have recommendations on?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1529841921588.356823993802",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "What name would you like?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Intent.1529841921588",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Would you really like to add a username?"
+                    }
+                ]
+            }
+        ]
+    }
+}
